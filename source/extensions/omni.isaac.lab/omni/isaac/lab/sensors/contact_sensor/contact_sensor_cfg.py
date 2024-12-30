@@ -17,8 +17,9 @@ class ContactSensorCfg(SensorBaseCfg):
 
     class_type: type = ContactSensor
 
-    track_pose: bool = False
+    track_pose: bool = True
     """Whether to track the pose of the sensor's origin. Defaults to False."""
+    # Set to True to track the pose of the sensor's origin for Project DMDM. ( Dec 29 2024)
 
     track_air_time: bool = False
     """Whether to track the air/contact time of the bodies (time between contacts). Defaults to False."""

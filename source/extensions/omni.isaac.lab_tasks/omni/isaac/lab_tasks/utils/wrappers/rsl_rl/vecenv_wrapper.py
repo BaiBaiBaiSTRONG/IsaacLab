@@ -143,6 +143,7 @@ class RslRlVecEnvWrapper(VecEnv):
             obs_dict = self.unwrapped.observation_manager.compute()
         else:
             obs_dict = self.unwrapped._get_observations()
+        print(type(obs_dict["policy"]))
         return obs_dict["policy"], {"observations": obs_dict}
 
     @property
